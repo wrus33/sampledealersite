@@ -1,0 +1,33 @@
+.slideShowWrap { position: relative; }
+.slideShowWrap .slides { position: relative; overflow: hidden; width: 100%; }
+.slideShowWrap .slides > div { width: 100%; }
+.slideShowWrap .slides a,
+.slideShowWrap .slides span { display: block; }
+.slideShowWrap .slides img { display: block; max-width: 100%; }
+.slideShowWrap .slideShowVideo { cursor: pointer; overflow: hidden; position: absolute; height: 163px; width: 196px; padding: 20px 20px 0 20px; background: transparent url(/v8/widgets/generic/image/v1/images/standards-slide-show-video-bg.png); }
+
+.slideShowWrap .h-left{ left: 18px; }
+.slideShowWrap .h-right{ right: 18px; }
+.slideShowWrap .h-center{ left: 50%; margin-left: -118px; }
+.slideShowWrap .v-top{ top: 18px; }
+.slideShowWrap .v-bottom{ bottom: 18px; }
+.slideShowWrap .v-center{ top: 50%; margin-top: -91px; }
+
+.slideShowWrap .slideShowVideo div{ width: 196px; height: 108px; margin: 0 0 10px;}
+.slideShowWrap .slideShowVideo embed, .slideShowWrap .slideShowVideo .ddc-video-wrapper {display:block; margin: 0 auto;}
+.slideShowWrap .slideShowVideo a{ display: block; width: 125px; margin: 0 auto; padding: 4px 0; border: 1px solid #CCC; text-align: center; text-decoration: none; color: #000; background: #FFF url(/v8/widgets/generic/image/v1/images/standards-slide-show-button.png) repeat-x; }
+.slideShowWrap .slideShowVideo a:hover{ border-color: #EEE; background-image: none; }
+.slideShowWrap .slideShowVideo span{ display: inline; }
+
+.slideShowVideoPlayer .ui-dialog-content {padding: 0;}
+
+.slideShowWrap .slides .slideshow-disclaimer a, .slideShowWrap .slides .slideshow-disclaimer span{display:inline;}
+.slideShowWrap .slides a.slideshow-disclaimer-btn {position: absolute; display: none; cursor: pointer!important;}
+.slideshow-disclaimer-btn[data-position] {top: 20px; right: 20px; display: none;}
+.slideshow-disclaimer-btn[data-position="top-left"] {top: 20px; bottom: initial; left: 20px; right: initial;}
+.slideshow-disclaimer-btn[data-position="top-right"] {top: 20px; right: 20px; bottom: initial; left: initial;}
+.slideshow-disclaimer-btn[data-position="bottom-left"] {top: initial; right: initial; bottom: 20px; left: 20px;}
+.slideshow-disclaimer-btn[data-position="bottom-right"] {top: initial; right: 20px; bottom: 20px; left: initial;}
+.slideshow-dialog.ui-dialog {border:none; background: rgba(255,255,255,0.9);top: 0 !important;overflow-y: scroll;max-height: 100%;width:100%!important;}
+.slideshow-disclaimer {text-align: left; max-width:1024px; margin:0 auto; color: #333;}
+.slideshow-disclaimer.ui-dialog-content{color: #333;}

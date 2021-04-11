@@ -1,0 +1,14 @@
+.widgetlyClose {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    color: #707070;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.widgetlyClose:hover {
+    opacity: 1;
+}

@@ -1,0 +1,105 @@
+(function(WIAPI) {
+  var API = new WIAPI('carnow');
+  API.subscribe('page-load-v1', function (ev) {
+
+      var appendElement = function(elem,div) {
+          API.append(elem,div)
+          if (typeof CNPC !== 'undefined') {
+              CNPC.setupBuyNow();
+          }
+      };
+      var createBuyNowDiv = function(elem, meta, classes) {
+          var div = document.createElement('div');
+          div.innerHTML = '<div style="display:block;padding:7px 0px;"><a class="' + classes + '" data-vin="' + meta.vin + '"></a></div>';
+          appendElement(elem,div)
+      };
+      var createCustomDiv = function(elem, meta, divContent) {
+          var div = document.createElement('div');
+          divContent = divContent.replace(new RegExp("{vin}", 'g'), meta.vin);
+          divContent = divContent.replace(new RegExp("{type}", 'g'), meta.inventoryType);
+          div.innerHTML = divContent;
+          appendElement(elem,div)
+      };
+      
+      if (ev.payload.searchPage) {
+          API.insertCallToAction('button', 'payment-calculator', function(meta) {
+    
+    return {
+        "type": "default",
+        "classes": "cn-buynow-b1",
+        "onclick": function() { return  },
+        "attributes": {"data-vin": meta.vin},
+        "text": {
+            "en_US": "Build My Deal"
+        }
+    }
+});
+API.insertCallToAction('button', 'test-drive', function(meta) {
+    
+    return {
+        "type": "default",
+        "classes": "demo-cta",
+        "onclick": function() { return CNPC.launch(this, { tree: '3000_V2_TEST_DRIVE_DR', dept: 2844, re_engage: true, vin: '{vin}'}) },
+        "attributes": {"data-vin": meta.vin},
+        "text": {
+            "en_US": "Schedule Test Drive"
+        }
+    }
+});
+
+if (ev.payload.layoutType == "mobile") {
+    
+} else {
+    
+}
+
+} else if (ev.payload.detailPage) {
+    API.insertCallToAction('button', 'payment-calculator', function(meta) {
+    
+    return {
+        "type": "default",
+        "classes": "cn-buynow-b1",
+        "onclick": function() { return  },
+        "attributes": {"data-vin": meta.vin},
+        "text": {
+            "en_US": "Build My Deal"
+        }
+    }
+});
+API.insertCallToAction('button', 'test-drive', function(meta) {
+    
+    return {
+        "type": "default",
+        "classes": "demo-cta",
+        "onclick": function() { return CNPC.launch(this, { tree: '3000_V2_TEST_DRIVE_DR', dept: 2844, re_engage: true, vin: '{vin}'}) },
+        "attributes": {"data-vin": meta.vin},
+        "text": {
+            "en_US": "Schedule Test Drive"
+        }
+    }
+});
+API.insertCallToAction('button', 'pre-approval', function(meta) {
+    
+    return {
+        "type": "default",
+        "classes": "demo-cta",
+        "onclick": function() { return CNPC.launch(this, { tree: '3000_V2_CREDIT_DR', dept: 3347, re_engage: true, vin: '{vin}'}) },
+        "attributes": {"data-vin": meta.vin},
+        "text": {
+            "en_US": "Get Pre-Approved"
+        }
+    }
+});
+
+if (ev.payload.layoutType == "mobile") {
+    
+} else {
+    
+}
+
+}
+API.loadJS("//app.carnow.com/dealers/carnow_plugin.js?key=bjvIJhc02AxCrIJvqyyxvj81pAngjrJuEHakBJ75c7AgbsJt", new Map([['id', 'com-carnow-plugin']])).then(function() {
+    CarNowPlugin.init();
+});
+    });
+})(window.DDC.API);

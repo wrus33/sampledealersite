@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0199)https://app.carnow.com/chat/live?key=bjvIJhc02AxCrIJvqyyxvj81pAngjrJuEHakBJ75c7AgbsJt&uvid=1902ea70-88b1-49dc-86dd-0a29a21cd0ea&xdm_e=https%3A%2F%2Fwww.autocentersnissan.com&xdm_c=default1816&xdm_p=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Live</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="+Z7HRBn28U4ig5hhtoTSjOz5uLwQoeQEqXhEQ38YbmCLXcFQZZFTQzY24NBVRWNPGqaR5u9VBkSl3xBZCVzJzQ==">
+<meta name="google" value="notranslate">
+<meta name="robots" content="nofollow">
+    <script src="./cnp-z-20210407141302.js.gz"></script>
+  <!--[if lt IE 9]>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if IE 9]>
+  <script src="https://d29f71cuc8ityh.cloudfront.net/js2/strophe.xdomainrequest.js?1.1.3"></script>
+  <![endif]-->
+<script>
+var cnChatX = null;
+$(document).ready(function() {
+  cnChatX = new CNChatX("https://tigase3.carnow.com:80/", "wss://cnc.carnow.com:443/", "https://app.carnow.com", false);
+  cnChatX.isCustomer = true;
+  cnChatX.visitorId = "1902ea70-88b1-49dc-86dd-0a29a21cd0ea";
+  try {
+    CN.interSocket = new easyXDM.Socket({
+      onMessage:function(message, origin) {
+        var json = JSON.parse(message);
+        if (json.type = "connect") {
+          setTimeout(function() {
+            checkAndConnect(true);
+          }, 2000);
+        }        
+      }
+    });
+  } catch (e) {}
+});
+function checkAndConnect(retry) {
+  if (!cnChatX.isConnected()) {
+    $.ajax({
+      url: "/users/jabber_info",
+      success: function(data) {
+        cnChatX.connect(data.jid, data.pass);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        if (retry) {
+          setTimeout(function() {
+            checkAndConnect(retry);
+          }, 2000);
+        }
+      }
+    });
+  }
+}
+</script>
+</head>
+<body>
+
+</body></html>

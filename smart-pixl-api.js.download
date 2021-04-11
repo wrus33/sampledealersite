@@ -1,0 +1,16 @@
+(async APILoader => {
+	const API = await APILoader.create(document.currentScript);
+	API.utils.getConfig().then(function(config) {
+        API.subscribe('page-load-v1', function() {
+            API.insert('page-footer', function(elem) {
+                var img = document.createElement('img');
+                img.src = 'https://smart-pixl.com/' + config.smartPixlProviderId + '/' + config.smartPixlId + '.GIF';
+                img.style.display = 'none';
+                img.setAttribute('http-equiv', 'Content-Style-Type');
+                img.setAttribute('content', 'image/gif');
+                API.append(elem, img);
+            });
+        });
+	});
+})(window.DDC.APILoader);
+

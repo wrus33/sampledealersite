@@ -1,0 +1,970 @@
+
+<!-- saved from url=(0111)https://api.ampry.com/placements/spawn?ad=10800&referrer_front=aHR0cHM6Ly93d3cuYXV0b2NlbnRlcnNuaXNzYW4uY29tLw== -->
+<html style="--body-font-family:Open Sans; --widget-maxwidth:250px; --general-background-color:#59BAE7; --button-max-width:250px; --button-border-width:3px; --button-padding:5px 20px 5px 20px; --button-background-color:#8FC43E; --button-color:#042838; --button-border-color:#042838; --button-borderradius:50px; --button-fontsize:12px; --button-hover-color:#fff; --button-hover-background-color:#8FC43E; --input-background-color:#fff; --input-color:#545454; --input-border-color:#a3a3a3; --input-border-width:1px; --input-border-radius:0px; --image-width:40%; --image-border-radius:0%; --headline-text-align:center; --headline-fontsize:29px; --headline-color:#042838; --headline-margin:0px 0px 0px 0px; --subheadline-text-align:center; --subheadline-fontsize:16px; --subheadline-color:#fff; --subheadline-margin:5px 0px 5px 0px; --description-text-align:center; --description-fontsize:8px; --description-color:#fff; --description-margin:5px 0px 0px 0px; --form-button-background-color:#90C43E; --form-button-color:#fff; --form-button-fontsize:15px; --form-button-border-radius:0px; --form-button-hover-color:#fff; --form-button-hover-background-color:#90C43E;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- brand css -->
+	<link href="./a24fa2cc-2cbb-4fa3-b538-32f6e224bc0f.css" rel="stylesheet">
+	<!-- brand css -->
+	<link href="./a24fa2cc-2cbb-4fa3-b538-32f6e224bc0f.css" rel="stylesheet">
+	<!-- notification widget preview position css -->
+	<link href="./e8089bb2-737f-421e-8532-2169be67721d.css" rel="stylesheet">
+	<!-- active query skin css -->
+	<link href="./90054931-dd69-4314-b5bd-13dc6425292e.css" rel="stylesheet">
+    <!-- widgetly close css -->
+	<link href="./9c084532-86dc-407a-8529-3421098502a3.css" rel="stylesheet">
+	<link crossorigin="anonymous" href="./all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" rel="stylesheet">
+	<!-- font css -->
+	<link href="./saved_resource" rel="stylesheet">
+	<!-- section css -->
+	<link href="./08d5480a-c982-4667-9550-ad1048baccd5.css" rel="stylesheet">
+	<style>
+		body {
+			margin: 0px;
+			font-family: var(--body-font-family);
+		}
+
+		div {
+			box-sizing: border-box;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.widgetlyMain {
+			position: fixed;
+			font-family: "Open Sans";
+			max-width: var(--widget-maxwidth);
+		}
+
+
+		.widgetlyAd.widgetlyPreview {
+			padding: 15px;
+			margin: 0;
+			width: 500px;
+			max-width: calc(var(--widget-maxwidth) + 30px);
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.innerContent {
+			border-radius: 5px;
+			position: relative;
+		}
+
+		.innerContent.formView {
+			padding-top: 20px;
+			background-color: var(--general-background-color);
+		}
+
+        .innerContent.buttonView {
+            border-radius: var(--button-borderradius);
+        }
+
+		.innerContent.boxShadowtrue {
+			-webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+			-moz-box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+			box-shadow: 0 0 5px 0 rgba(43, 43, 43, 0.1), 0 11px 6px -7px rgba(43, 43, 43, 0.1);
+		}
+
+		.buttonWrapper,
+		.formWrapper {
+			display: none
+		}
+
+		.closeForm {
+			position: absolute;
+			top: 1px;
+			right: 5px;
+			font-size: 19px;
+			cursor: pointer;
+			color: #fff;
+			display: none;
+		}
+
+		.innerContent.buttonView .buttonWrapper {
+			display: block;
+		}
+
+		.innerContent.formView .formWrapper {
+			display: table;
+			width: 100%;
+		}
+
+		.innerContent.formView .closeForm {
+			display: block;
+		}
+
+		.button {
+			text-align: center;
+			padding: var(--button-padding);
+			border-radius: var(--button-borderradius);
+			border: var(--button-border-width)solid var(--button-border-color);
+			cursor: pointer;
+			text-transform: uppercase;
+			background-color: var(--button-background-color);
+			color: var(--button-color);
+			font-size: var(--button-fontsize);
+		}
+
+		.button:hover {
+			background-color: var(--button-hover-background-color);
+			color: var(--button-hover-color);
+		}
+
+		.imageHolder {
+			display: table-cell;
+			vertical-align: middle;
+			width: var(--image-width);
+			position: relative;
+		}
+
+		.imageHolder img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: var(--image-border-radius);
+		}
+
+		.formHolder {
+			width: 100%;
+			display: table-cell;
+			padding: 0px 10px;
+			box-sizing: border-box;
+		}
+
+		.headline {
+			color: var(--headline-color);
+			font-size: var(--headline-fontsize);
+			text-align: var(--headline-text-align);
+            margin:var(--headline-margin);
+		}
+
+		.subheadline {
+			margin: var(--subheadline-margin);
+			color: var(--subheadline-color);
+			font-size: var(--subheadline-fontsize);
+			text-align: var(--subheadline-text-align);
+		}
+
+
+		.errorMessage {
+			color: #ce2828 !important;
+			display: none;
+			text-align: left;
+		}
+
+		.formButton {
+			margin: 5px 0;
+			padding: 10px;
+			border-radius: var(--form-button-border-radius);
+			cursor: pointer;
+			background-color: var(--form-button-background-color);
+			color: var(--form-button-color);
+			font-size: var(--form-button-fontsize);
+			overflow: hidden;
+			text-align: center;
+		}
+
+		.formButton:hover {
+			background-color: var(--form-button-hover-background-color);
+			color: var(--form-button-hover-color);
+		}
+
+		#description{
+			color: var(--description-color);
+			font-size: var(--description-fontsize);
+			text-align: var(--description-text-align);
+			margin: var(--description-margin);
+		}
+
+        #description a,
+		#description a:hover {
+			text-decoration: underline;
+			color: var(--description-color);
+			font-size: var(--description-fontsize);
+		}
+
+        #formContainer.bottomBordertrue input {
+			border: none;
+			border-bottom: var(--input-border-width) solid var(--input-border-color);
+		}
+
+        #formContainer.bottomBordertrue input {
+			border: none;
+			border-bottom: var(--input-border-width) solid var(--input-border-color);
+		}
+
+		.inputHolder {
+			margin: 5px 0;
+			width: 100%;
+		}
+
+		.inputHolder.hidden {
+			display: none;
+		}
+
+		.inputHolder input {
+			width: 100%;
+			border: var(--input-border-width) solid var(--input-border-color);
+			color: var(--input-color);
+			padding: 10px 15px;
+			border-radius: var(--input-border-radius);
+			font-size: 16px;
+			text-align: left;
+			background-color: var(--input-background-color);
+		}
+
+		.inputHolder input::placeholder {
+			color: var(--input-color);
+		}
+
+		.inputHolder input:focus {
+			outline: none;
+		}
+
+		.inputHolder.validationFailed input {
+			border-color: #ce2828 !important;
+			color: #ce2828 !important;
+		}
+
+		.inputHolder.validationFailed input::placeholder {
+			color: #ce2828 !important;
+		}
+
+		.inputHolder.validationFailed .errorMessage {
+			display: block;
+		}
+
+		.confirmationMessage {
+			color: var(--headline-color);
+			font-size: var(--headline-fontsize);
+			text-align: var(--headline-text-align);
+		}
+
+		#stepForm {
+			display: block;
+		}
+
+		#stepSubmission,
+		#closeSubmission {
+			display: none
+		}
+
+		@media(max-width:500px) {
+			.widgetlyMain {
+				width: 100%
+			}
+            .imageHolder {
+			display: none;
+		    }
+            .imageHolder img {
+			object-fit: cover;
+		    }
+		}
+
+
+
+	</style>
+<link href="./widgetly.css" rel="stylesheet" type="text/css"></head>
+<body><div class="widgetlyMain widgetlyBottomCenter widgetlyMobileBottom" data-adgroup="3413" data-widgetwidth="250"><div class="widgetlyAd" data-ad="10800" onmouseenter="regEngagement(10800, this)">
+<div class="innerContent boxShadowtrue buttonView" data-dynamic-views="[{&quot;name&quot;:&quot;buttonView&quot;,&quot;htmlVar&quot;:&quot;--button-max-width&quot;},{&quot;name&quot;:&quot;formView&quot;,&quot;htmlVar&quot;:&quot;--widget-maxwidth&quot;}]" data-template-type="notification" data-view="">
+<i class="fas fa-angle-down closeForm" onclick="setView(&#39;buttonView&#39;,true)"></i>
+<div class="buttonWrapper" data-edit-section="button" id="button-ampry" onclick="setView(&#39;formView&#39;,true)">
+<div class="button" id="button-ampry"><div><strong>TEXT ME MY TRADE-IN VALUE!</strong></div></div>
+</div>
+<div class="formWrapper">
+<div class="imageHolder" data-edit-section="image" data-on-off-fields="image.src">
+<img id="image" src="./a442629b-9a57-448f-bb3b-2feb08d9a1a7.png">
+</div>
+<div class="formHolder">
+<div id="stepForm">
+<div class="headline" data-edit-section="headline" data-on-off-fields="this.innerText" style="font-weight:bold">Wonder what your vehicle is worth?</div>
+<div class="subheadline" data-edit-section="subheadline" data-on-off-fields="this.innerText" style="">Enter your mobile phone number and click Text Me My Trade-in Value</div>
+<div class="bottomBorderfalse" data-edit-section="fields" data-form-fields="name;val;phone;key;validation;val;required;key;placeholder;val;Mobile Number;key;img;val;https://cdn.ampry.com/media/adimgs/3c8067020a6e4027a9791ee26b12fc38.png;object;name;val;provider;key;placeholder;val;;key;validation;val;;key;hidden;val;true;key;value;val;ampry;object;name;val;sourceId;key;placeholder;val;;key;validation;val;;key;hidden;val;true;key;value;val;812e173f-a423-4844-b30d-1d65b38c6a0b0" id="formContainer"><div class="inputHolder" id="phoneHolder"><div style="position: relative;"><img src="./3c8067020a6e4027a9791ee26b12fc38.png" data-on-off-fields="this.src" width="30" height="16" style="position:absolute;top:0;bottom:0;left:5px;margin:auto;object-fit:contain"><input type="text" id="phone" data-validation="required" placeholder="Mobile Number" style="padding-left: 40px; padding-right: 40px;"></div></div><div class="inputHolder hidden"><input type="text" id="provider" data-validation="" placeholder="" value="ampry"></div><div class="inputHolder hidden"><input type="text" id="sourceId" data-validation="" placeholder="" value="812e173f-a423-4844-b30d-1d65b38c6a0b0"></div></div>
+<div data-edit-section="description" id="description" style="">
+<div>By clicking "Text Me My Trade-in Range" you agree AutoCenters Nissan may use auto dialers to send marketing and information communications to the number provided. You do not need to consent to make a purchase. Text Stop to Stop text messages. Data rates may apply. <a href="http://magicurl.com/sms-terms.php" target="_top">Texting Terms</a></div>
+</div>
+<div class="formButton" data-edit-section="button" id="formButton" onclick="sendSubscription(this)" tabindex="0">TEXT ME MY TRADE-IN VALUE</div>
+</div>
+<div data-submission="action;val;close;key;report_conversion;val;true" id="stepSubmission">
+<div class="trigger-close" id="closeSubmission"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	<div class="ampryBrand" style="display:none;">
+		<a href="https://ampry.com/?utm_source=Badge&amp;utm_medium=undefined&amp;utm_campaign=undefined" target="_blank">
+			<img alt="Ampry" src="./448442cbd6574212b2433057a3823151.png">
+		</a>
+	</div></div>
+<!-- dynamic views JS -->
+
+<!-- generate form JS -->
+
+<!-- post max width JS -->
+
+<!-- post width height JS -->
+
+<!-- on/off elements JS -->
+
+<!-- validation helper -->
+
+<!-- send subscription -->
+
+
+<script>const onloadMethods=['checkParamsFormat','checkDateTimeFormat','checkCountdownMacosFormat','generateImageEditor','generateForm','setSubmissionData','setHeightPopUpCheck','setSpinner','initCountdowns','checkPreview','setUpOwl','videoOverlay','generateCountdownLabels',]
+window.addEventListener('DOMContentLoaded',(event)=>{for(let i=0;i<onloadMethods.length;i++){if(this[onloadMethods[i]]!=undefined){this[onloadMethods[i]]()}}});const splitElementsKey=';object;'
+const splitDataKey=';key;'
+const spitParamValueKey=';val;'
+var dataHelper={}
+function checkPureObject(data){return data instanceof Object&&!(data instanceof Array)&&!(data instanceof File)&&!(data instanceof Date)&&!(data instanceof Blob)}
+function stringifyArray(array){let value=''
+for(let i=0;i<array.length;i++){if(value!='')value+=splitElementsKey
+value+=stringifyObject(array[i])}
+return value}
+function checkQuotes(value){if(value&&typeof(value)=='string'&&value.indexOf('"')>-1)return value.split('"').join('\'')
+else return value}
+function stringifyObject(data){let value=''
+for(let key in data){if(value!='')value+=splitDataKey
+value+=key+spitParamValueKey+checkQuotes(data[key])}
+return value}
+dataHelper.stringify=function(data){if(data instanceof Array)return stringifyArray(data)
+else if(checkPureObject(data))return stringifyObject(data)}
+function checkType(value){if(value=='false'||value=='true'){if(value=='false')return false
+else return true}
+else return value}
+function parseObject(data){let keys=data.split(splitDataKey)
+let object={}
+for(let m=0;m<keys.length;m++){if(keys[m].indexOf(spitParamValueKey)>-1){let keyData=keys[m].split(spitParamValueKey)
+object[keyData[0]]=checkType(keyData[1])}
+else console.warn("The key data "+keys[m]+" doesn't have propper structure")}
+return object}
+function parseArray(value){let data=[]
+let elements=value.split(splitElementsKey)
+if(elements.length>0){for(let i=0;i<elements.length;i++){data.push(parseObject(elements[i]))}}
+return data}
+dataHelper.parseObject=function(value){return parseObject(value)}
+dataHelper.parseArray=function(value){return parseArray(value)}
+dataHelper.parse=function(value){if(value.indexOf(splitElementsKey)>-1)return parseArray(value)
+else return parseObject(value)}
+const countdownElements=[{key:'days',index:24*60*60,showIfEmpty:false},{key:'hours',index:60*60,showIfEmpty:false},{key:'minutes',index:60,showIfEmpty:true},{key:'seconds',index:1,showIfEmpty:true}]
+var countdownInterval;var countdownHolders=[];function getTwoDigitsCounter(number){if(number<10)return'0'+number.toString()
+return number.toString()}
+function formatCounterTime(time){if(time.indexOf('AM')>-1||time.indexOf('PM')>-1){let timeComponents=time.split(' ')
+let hoursMinutes=timeComponents[0].split(':')
+if(timeComponents[1]=='AM')
+return(parseInt(hoursMinutes[0])==12?'00':hoursMinutes[0])+':'+hoursMinutes[1]
+return(parseInt(hoursMinutes[0])==12?parseInt(hoursMinutes[0]):parseInt(hoursMinutes[0])+12)+':'+hoursMinutes[1]}
+return time}
+function getEndDate(data){if(data['type']=='date'){if(data['date']){let dateString=data['date']
+if(data['time'])dateString+='T'+formatCounterTime(data['time'])
+else dateString+='T00:00:00'
+if(data['timezone'])dateString+=data['timezone']
+return new Date(dateString)}
+else console.error('No end date is provided')}
+else if(data['type']=='minute'){if(data['minutes']){let timeNow=new Date().getTime();appendTime=parseInt(data['minutes'])*60*1000
+if(data['seconds'])appendTime+=parseInt(data['seconds'])*1000
+return new Date(timeNow+appendTime)}
+else console.error('No additional minutes are provided')}
+return null}
+function getCoundownValues(countdownSeconds){let values={}
+for(i=0;i<countdownElements.length;i++){if(countdownSeconds>0){values[countdownElements[i]['key']]=Math.floor(countdownSeconds/countdownElements[i]['index'])
+if(values[countdownElements[i]['key']]>0)
+countdownSeconds-=values[countdownElements[i]['key']]*countdownElements[i]['index']}
+else values[countdownElements[i]['key']]=0}
+return values}
+function hideCountdownElement(index,countdownInfo){if(countdownElements[index]['showIfEmpty']||countdownInfo[countdownElements[index]['key']]>0)return false
+else{for(let i=index-1;i>=0;i--){if(countdownInfo[countdownElements[i]['key']]>0)return false}
+return true}}
+function showCountdownCustomValues(countdownHolder,value){let output=''
+for(let key in value){if(value[key]||output!=''){if(output!='')output+=':'
+output+=getTwoDigitsCounter(value[key])}}
+countdownHolder.innerHTML=output}
+function showCountdownValues(countdownHolder,countdownInfo){let countdownVisibleElements=[];for(i=0;i<countdownElements.length;i++){if(countdownHolder&&countdownHolder.classList.contains('countdown-from-'+countdownElements[i]['key']))countdownHolder.classList.remove('countdown-from-'+countdownElements[i]['key'])
+let countdownElement=countdownHolder.querySelector(`[data-countdown-element=${countdownElements[i]['key']}]`)
+if(countdownElement){if(hideCountdownElement(i,countdownInfo))
+countdownElement.style.display='none'
+else{countdownElement.style.display=''
+if(countdownVisibleElements.length==0&&countdownHolder)
+countdownHolder.classList.add('countdown-from-'+countdownElements[i]['key'])
+countdownVisibleElements.push(countdownElement)}
+let countdownValues=countdownElement.querySelectorAll('[data-countdown-value]')
+for(let m=0;m<countdownValues.length;m++){let keyValue=getTwoDigitsCounter(countdownInfo[countdownElements[i]['key']])
+switch(countdownValues[m].getAttribute('data-countdown-value')){case'full':countdownValues[m].innerHTML=keyValue;break
+case'first':countdownValues[m].innerHTML=keyValue.charAt(0);break
+case'second':countdownValues[m].innerHTML=keyValue.charAt(1);break}}}
+else console.warn(`There is no countdown element for ${countdownElements[i]['key']}`)}
+for(let i=0;i<countdownVisibleElements.length;i++){if(i==0)countdownVisibleElements[i].classList.add('first')
+else if(countdownVisibleElements[i].classList.contains('first'))countdownVisibleElements[i].classList.remove('first')
+countdownVisibleElements[i].style.width=`calc(100%/${countdownVisibleElements.length})`}}
+function setCountdownValues(){let clearCountdownInterval=true
+for(let i=0;i<countdownHolders.length;i++){if(countdownHolders[i]['value']>=0){countdownHolders[i]['value']-=1
+if(countdownHolders[i]['countdownData']['customValue'])
+showCountdownCustomValues(countdownHolders[i]['element'],getCoundownValues(countdownHolders[i]['value']))
+else showCountdownValues(countdownHolders[i]['element'],getCoundownValues(countdownHolders[i]['value']))
+if(clearCountdownInterval)clearCountdownInterval=false}
+else{if(countdownHolders[i]['countdownData']['hideExpired'])countdownHolders[i]['element'].style.display="none"
+if(countdownHolders[i]['countdownData']['closeExpired'])document.querySelector('.trigger-close').click()}}
+if(clearCountdownInterval)clearInterval(countdownInterval)}
+function getCountdownValue(startDate,endDate){if(startDate&&endDate){let startTime=startDate.getTime();let endTime=endDate.getTime();if(startTime<endTime)
+return Math.floor((endTime-startTime)/1000)
+else console.error('Start date is bigger than end date')}
+else console.error('There are no valid start and end dates')
+return 0}
+function initCountdowns(){let countdowns=document.querySelectorAll('[data-countdown]')
+if(countdowns&&countdowns.length>0){for(let i=0;i<countdowns.length;i++){let countdownHolder={element:countdowns[i],value:0,countdownData:{}}
+try{countdownHolder['countdownData']=dataHelper.parse(countdowns[i].getAttribute('data-countdown'))}
+catch(err){}
+countdownHolder['value']=getCountdownValue(new Date(),getEndDate(countdownHolder['countdownData']))
+countdownHolders.push(countdownHolder)}
+setCountdownValues()
+countdownInterval=setInterval(setCountdownValues,1000);}
+else console.warn('There are no countdown holders')}
+const formatCountdownMacroFrom="{COUNTDOWN"
+const formatCountdownMacroTo="}"
+const countdownValueSeparator='|'
+const countdownDataTypes=[{name:'time',keys:['minutes','seconds']},{name:'date',keys:['date','time','timezone']}]
+const countdownDataSeparator=';'
+function getCountdownType(countdownType){if(countdownType=='time')return'minute'
+return countdownType}
+function getCountdownTime(time){if(time.indexOf('PM')>-1)return time.split('PM').join(' PM')
+else if(time.indexOf('AM')>-1)return time.split('AM').join(' AM')}
+function getCountdownMacro(countdownMacro){let countdownValue=countdownMacro.split(countdownValueSeparator)[1]
+if(countdownValue){let countdownDataType;let countdownMacroData={hideExpired:true,customValue:true}
+let countdownData;for(let i=0;i<countdownDataTypes.length;i++){if(countdownValue.indexOf(countdownDataTypes[i]['name'])>-1){countdownDataType=countdownDataTypes[i]
+countdownMacroData['type']=getCountdownType(countdownDataType['name'])
+countdownData=countdownValue.split(countdownDataType['name']+'=')[1]
+break;}}
+if(countdownData){let data=countdownData.split(countdownDataSeparator)
+for(let i=0;i<countdownDataType['keys'].length;i++){if(data[i]){if(countdownDataType['keys'][i]=='time')countdownMacroData[countdownDataType['keys'][i]]=getCountdownTime(data[i])
+else countdownMacroData[countdownDataType['keys'][i]]=data[i]}}
+return`<span data-countdown="${dataHelper.stringify(countdownMacroData)}"></span>`}}
+return''}
+function formatCountdownMacroContent(content,formatFrom,formatTo){let countdownMacroValues=getFormatValues(content,formatFrom,formatTo)
+for(let i=0;i<countdownMacroValues.length;i++){let formattedValue=getCountdownMacro(countdownMacroValues[i])
+if(formattedValue)
+content=content.split(formatFrom+countdownMacroValues[i]+formatTo).join(formattedValue)}
+return content}
+function formatCountdownMacros(element){element.innerHTML=formatCountdownMacroContent(element.innerHTML.trim(),formatCountdownMacroFrom,formatCountdownMacroTo)}
+function checkCountdownMacosFormat(){let widgelyMain=document.querySelector('.widgetlyMain')
+let widgetlyAd=document.querySelector('.widgetlyAd')
+if(widgelyMain)
+formatCountdownMacros(widgelyMain)
+else if(widgetlyAd)
+formatCountdownMacros(widgetlyAd)}
+function getUrlParams(){let urlParams={}
+let domain_url=document.referrer
+if(typeof ampry_referrer!=='undefined')
+domain_url=ampry_referrer
+if(domain_url.indexOf('?')>-1||domain_url.indexOf('#')){var queryString=domain_url.split('?').pop(1).split('#')[0]
+var hashString=domain_url.split('#').pop(1).split('?')[0]
+var urlParamsArray=queryString.split('&').concat(hashString.split('&'))
+for(let i=0;i<urlParamsArray.length;i++){let paramsData=urlParamsArray[i].split('=')
+if(paramsData.length>1)urlParams[paramsData[0].toLowerCase()]=paramsData[1]}}
+else console.warn('No url parameters')
+console.log(urlParams)
+return urlParams}
+const formatQueryMacroFrom="{"
+const formatQueryMacroTo="}"
+const formatQueryMacroKeyValues=['url_param:','URL_PARAM:'];const formatQueryMacroDefaultValue='|'
+function formatQueryParam(formatValue){for(let i=0;i<formatQueryMacroKeyValues.length;i++){if(formatValue.indexOf(formatQueryMacroKeyValues[i])>-1){let keyValue=formatValue.split(formatQueryMacroKeyValues[i])[1]
+if(keyValue){let key=keyValue.split(formatQueryMacroDefaultValue)[0].toLowerCase()
+let value=keyValue.split(formatQueryMacroDefaultValue)[1]||''
+if(key)
+return getUrlParams()[key]||value}}}
+return formatValue}
+function formatQueryParamsContent(content,formatFrom,formatTo){let formatQueryParamsValues=getFormatValues(content,formatFrom,formatTo)
+for(let i=0;i<formatQueryParamsValues.length;i++){let formatValue=formatQueryParam(formatQueryParamsValues[i])
+if(formatValue!=formatQueryParamsValues[i])
+content=content.split(formatFrom+formatQueryParamsValues[i]+formatTo).join(formatValue)}
+return content}
+function formatQueryParams(element){element.innerHTML=formatQueryParamsContent(element.innerHTML.trim(),formatQueryMacroFrom,formatQueryMacroTo)}
+function checkParamsFormat(){let widgelyMain=document.querySelector('.widgetlyMain')
+let widgetlyAd=document.querySelector('.widgetlyAd')
+if(widgelyMain)
+formatQueryParams(widgelyMain)
+else if(widgetlyAd)
+formatQueryParams(widgetlyAd)}
+const formatFrom="{"
+const formatTo="}"
+const formatDateValue=';'
+const predefinedDates={'today':0,'yesterday':-1*24*60*60*1000,'tomorrow':24*60*60*1000}
+const predefinedOperations={'add':1,'subtract':-1,}
+const predefinedIndexes={'seconds':1000,'minutes':60*1000,'hours':60*60*1000,'days':24*60*60*1000,'months':365.25/12*24*60*60*1000,'years':365.25*24*60*60*1000}
+const shortMonths=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+const months=['January','February','March','April','May','June','July','August','September','October','November','December']
+const weekdays=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+const appendDays=[{value:1,append:'st'},{value:2,append:'nd'},{value:'*',append:'th'}]
+const formatMethods={}
+formatMethods['YYYY']=function(date){return date.getFullYear()}
+formatMethods['YY']=function(date){return date.getFullYear().toString().substr(-2)}
+formatMethods['MMMM']=function(date){return months[date.getMonth()]}
+formatMethods['MMM']=function(date){return shortMonths[date.getMonth()]}
+formatMethods['MM']=function(date){return getTwoDigits(date.getMonth()+1)}
+formatMethods['dddd']=function(date){return weekdays[date.getDay()]}
+formatMethods['DD']=function(date){return getTwoDigits(date.getDate())}
+formatMethods['Do']=function(date){return appendDay(date.getDate())}
+formatMethods['hh:mm:ss-a']=function(date){return get12hourTime(date)}
+formatMethods['hh']=function(date){return getTwoDigits(date.getHours())}
+formatMethods['mm']=function(date){return getTwoDigits(date.getMinutes())}
+formatMethods['ss']=function(date){return getTwoDigits(date.getSeconds())}
+function getTwoDigits(number){if(number<10)return'0'+number
+return number}
+function get12hourTime(date){return(date.getHours()==12?date.getHours():getTwoDigits(date.getHours()%12))+':'+getTwoDigits(date.getMinutes())+':'+getTwoDigits(date.getSeconds())+' '+(date.getHours()>=12?'pm':'am')}
+function appendDay(day){for(let i=0;i<appendDays.length;i++){if(day%10==appendDays[i]['value']||appendDays[i]['value']=='*')return day+appendDays[i]['append']}}
+function getDate(value){if(predefinedDates.hasOwnProperty(value.toLowerCase()))return new Date(new Date().getTime()+predefinedDates[value.toLowerCase()])
+valueComponents=value.split(' ')
+if(valueComponents.length==3&&predefinedOperations.hasOwnProperty(valueComponents[0].toLowerCase())){if(valueComponents[1]&&!isNaN(valueComponents[1])&&predefinedIndexes.hasOwnProperty(valueComponents[2].toLowerCase()))
+return new Date(new Date().getTime()+(predefinedOperations[valueComponents[0].toLowerCase()]*parseInt(valueComponents[1])*predefinedIndexes[valueComponents[2].toLowerCase()]))}
+return null}
+function formatValue(date,value){for(let key in formatMethods){if(value.indexOf(key)>-1)value=value.split(key).join(formatMethods[key](date));}
+return value}
+function getDateFormat(date,format){let formatedValue=formatValue(date,format)
+return(formatedValue!=format)?formatedValue:''}
+function formatTimeValue(value){if(value){let dateTime=value.split(formatDateValue)
+let date=getDate(dateTime[0])
+let dateFormat=value.split(dateTime[0]+formatDateValue)[1]
+if(date&&dateFormat)
+return getDateFormat(date,dateFormat)}
+return''}
+function formatContent(content,formatFrom,formatTo){let formatValues=getFormatValues(content,formatFrom,formatTo)
+for(let i=0;i<formatValues.length;i++){let formatedValue=formatTimeValue(formatValues[i])
+if(formatedValue)
+content=content.split(formatFrom+formatValues[i]+formatTo).join(formatedValue)}
+return content}
+function formatTime(element){element.innerHTML=formatContent(element.innerHTML.trim(),formatFrom,formatTo)}
+function checkDateTimeFormat(){let widgelyMain=document.querySelector('.widgetlyMain')
+let widgetlyAd=document.querySelector('.widgetlyAd')
+if(widgelyMain)
+formatTime(widgelyMain)
+else if(widgetlyAd)
+formatTime(widgetlyAd)}
+function getFormatValues(content,formatFrom,formatTo){let formatValues=[]
+function getValue(content,formatFrom,formatTo){if(content.indexOf(formatFrom)<0||content.indexOf(formatTo)<0)return
+let betweenValue=content.split(formatFrom)[1].split(formatTo)[0]
+formatValues.push(betweenValue)
+content=content.split(formatFrom+betweenValue+formatTo).slice(1).join('')
+getValue(content,formatFrom,formatTo)}
+getValue(content,formatFrom,formatTo)
+return formatValues;}
+function editSection(sectionName){parent.postMessage({type:"editSection",sectionName:sectionName},"*");}
+function setEditSections(){let editSections=document.querySelectorAll('[data-edit-section]');if(editSections.length>0){for(let i=0;i<editSections.length;i++){editSections[i].setAttribute('data-edit-holder','')
+editSections[i].addEventListener("click",function(){editSection(editSections[i].getAttribute('data-edit-section'))})}}
+else console.warn('No edit sections were found')}
+function checkPreview(){let main=document.getElementsByClassName("widgetlyMain")[0]
+if(main&&main.classList.contains('sectionPreview'))setEditSections()}
+var apiHostName="https://api.ampry.com/"
+function regEngagement(adId,e){e.removeAttribute("onmouseenter")
+const GetAdHttp=new XMLHttpRequest();var data={};data['ad_id']=adId;GetAdHttp.open('POST',apiHostName+"placements/register/engagement/",true);GetAdHttp.setRequestHeader('Content-Type','application/json');GetAdHttp.send(JSON.stringify({data}));}
+function regClick(placementID,e){e.removeAttribute("onclick")
+const GetAdHttp=new XMLHttpRequest();GetAdHttp.open('GET',apiHostName+"placements/register/click/"+placementID+"/",true);GetAdHttp.send();}
+function checkConversions(revenue,adid){const GetAdHttp=new XMLHttpRequest();const genUrl=apiHostName+"placements/conversions/check/?revenue="+revenue+"&adid="+adid;GetAdHttp.open("GET",genUrl,true);GetAdHttp.withCredentials=true;GetAdHttp.setRequestHeader("Content-Type","application/json");GetAdHttp.send();}
+function getCookiesArray(goalId){var cookies={};if(document.cookie&&document.cookie!=''){var split=document.cookie.split(';');for(var i=0;i<split.length;i++){var name_value=split[i].split("=");name_value[0]=name_value[0].replace(/^ /,'');if(name_value[0].endsWith("goal"+goalId+"fin")===true)
+{return true}}}
+return false;}
+function widgetlySetCookie(widgetId,goalId,cvalue,exdays){if(getCookiesArray(goalId))
+{return;}
+cname="widg"+widgetId+"goal"+goalId+"fin";var d=new Date();d.setTime(d.getTime()+(exdays*24*60*60*1000));var expires="expires="+d.toUTCString();document.cookie=cname+"="+cvalue+";"+expires+";path=/; SameSite=None; Secure";}
+var availableViews=[];var activeView;var activeViewIndex=0
+var currentWindowWidth;var iframeMethod;const setIframeMethod={notification:'setIframeWidthAndHeight',bar:'setIframeHeight',onPage:'setIframeHeight',popUp:''}
+function setView(view,resetDimensions){let viewElement=document.querySelector('[data-view]')
+if(viewElement){activeView=view
+for(let i=0;i<availableViews.length;i++){if(availableViews[i]['name']!=view){if(viewElement.classList.contains(availableViews[i]['name']))viewElement.classList.remove(availableViews[i]['name'])}
+else{activeViewIndex=i;if(!viewElement.classList.contains(availableViews[i]['name']))viewElement.classList.add(availableViews[i]['name'])
+let maxWidthElement=document.querySelector('[data-widgetwidth]')
+let html=document.getElementsByTagName('html')[0]
+if(maxWidthElement)
+maxWidthElement.setAttribute('data-widgetwidth',availableViews[i]['maxWidth'])
+if(html)html.style.setProperty('--widget-maxwidth',availableViews[i]['maxWidth']+'px');}}
+if(resetDimensions){if(typeof sendMaxWidth!='undefined')sendMaxWidth()
+if(typeof element!='undefined'){if(typeof sendWidthHeight!='undefined')sendWidthHeight()}
+if(iframeMethod&&typeof this[iframeMethod]!='undefined')this[iframeMethod]()}}
+else console.warn("There is no view element")}
+function setViewsMaxWidth(){let html=document.getElementsByTagName('html')[0]
+for(let i=0;i<availableViews.length;i++){if(availableViews[i]['htmlVar']){if(html.style.getPropertyValue(availableViews[i]['htmlVar']))
+availableViews[i]['maxWidth']=html.style.getPropertyValue(availableViews[i]['htmlVar']).split('px')[0]
+else console.warn("There is no such variable found in the html "+availableViews[i]['htmlVar'])}}}
+function setViews(){let dynamicViewsElement=document.querySelector('[data-dynamic-views]')
+if(dynamicViewsElement){try{availableViews=JSON.parse(dynamicViewsElement.getAttribute('data-dynamic-views'))}
+catch(err){}
+let templateTypeValue=dynamicViewsElement.getAttribute('data-template-type')
+if(templateTypeValue){if(setIframeMethod[templateTypeValue]){iframeMethod=setIframeMethod[templateTypeValue]}
+else console.warn(`The template value'${templateTypeValue}'is not valid`)}
+else console.warn("The template doesn't have specified type")}
+else console.warn("There is now element with dynamic views")}
+function listenWindowsResize(){window.addEventListener('resize',function(){if(currentWindowWidth!=window.innerWidth){let newView=getMaxWidthView()
+if(activeView!=newView['name'])setView(newView['name'],true)
+currentWindowWidth=window.innerWidth}})}
+function getMaxWidthView(){let view=availableViews.find(view=>!view['maxResponsiveWidth'])
+let viewsWithMaxWidth=availableViews.filter(view=>view['maxResponsiveWidth']).sort(function(a,b){return a['maxResponsiveWidth']-b['maxWidth']})
+if(viewsWithMaxWidth.length>0){for(let i=0;i<viewsWithMaxWidth.length;i++){if(viewsWithMaxWidth[i]['maxResponsiveWidth']>=window.innerWidth){return availableViews[i]}}}
+return view}
+function getView(){let view=availableViews.find(view=>!view['maxResponsiveWidth'])
+if(view){if(availableViews.find(view=>view['maxResponsiveWidth'])){view=getMaxWidthView()
+listenWindowsResize()}
+return view['name']}
+else console.error("There is no default view")
+return''}
+setViews()
+if(availableViews.length>0){setViewsMaxWidth()
+setView(getView(),false)}
+var formInputIds=[]
+function getFormInputIds(){return formInputIds}
+function generateFields(formHolder,fields){formInputIds=[];if(fields.length>0){let formBaseHtml=''
+if(formHolder.innerHTML){formBaseHtml=formHolder.innerHTML.trim()
+formHolder.innerHTML=''}
+for(let i=0;i<fields.length;i++){let inputHolder=createFormHolder(fields[i])
+let inputElement=createInputElement(fields[i],i)
+formInputIds.push(inputElement.getAttribute('id'))
+if(fields[i]['img']){let holder=document.createElement('div')
+holder.style.position='relative'
+holder.appendChild(createImgElement(fields[i]))
+inputElement.style.paddingLeft='40px'
+inputElement.style.paddingRight='40px'
+holder.appendChild(inputElement)
+inputHolder.appendChild(holder)}
+else inputHolder.appendChild(inputElement)
+formHolder.appendChild(inputHolder)}
+if(formBaseHtml)formHolder.innerHTML+=formBaseHtml}
+else console.warn("There are no fields in the list")}
+function createImgElement(fieldInfo){let img=document.createElement('img')
+img.setAttribute("src",fieldInfo['img'])
+img.setAttribute("data-on-off-fields","this.src")
+img.setAttribute("width","30")
+img.setAttribute("height","16")
+img.setAttribute("style","position:absolute;top:0;bottom:0;left:5px;margin:auto;object-fit:contain")
+return img}
+function createFormHolder(fieldInfo){let element=document.createElement("div")
+element.setAttribute('class','inputHolder')
+if(fieldInfo['hidden'])
+element.classList.add('hidden')
+return element}
+function generateFieldId(name,index){var id=''
+if(name){if(formInputIds.indexOf(name)>-1)id=name+index
+else id=name}
+else id='field'+index
+return id}
+function createInputElement(fieldInfo,index){let element=document.createElement("input")
+element.setAttribute('type','text')
+element.setAttribute('id',generateFieldId(fieldInfo['name'],index))
+element.setAttribute('data-validation',fieldInfo['validation'])
+element.setAttribute('placeholder',fieldInfo['placeholder'])
+if(fieldInfo['value'])
+element.setAttribute('value',fieldInfo['value'])
+return element}
+function isMultistepForm(){let wm=document.querySelector(".widgetlyMain");if(wm&&wm.dataset&&wm.dataset.multiStep)return true;else return false;}
+function generateForm(){let formHolder;if(isMultistepForm()&&typeof(availableViews)!=='undefined'&&availableViews[activeViewIndex]&&availableViews[activeViewIndex]["name"]){formHolder=document.querySelector(`.${availableViews[activeViewIndex]["name"]}Wrapper`+' #formContainer');}else{formHolder=document.getElementById('formContainer')}
+if(formHolder){if(formHolder.hasAttribute('data-form-fields')&&formHolder.getAttribute('data-form-fields'))
+{generateFields(formHolder,dataHelper.parseArray(formHolder.getAttribute('data-form-fields')))
+setValidationFields()}
+else console.warn("The holder doesn't have fields attribute or the attribute is empty")}
+else console.warn("The form holder doesn't exists")
+bindEnterToStepForm()}
+function bindEnterToStepForm(){let element=document.getElementById('stepForm')
+if(element){let button=element.querySelector("#formButton")
+if(button){element.addEventListener("keyup",function(event){if(event.keyCode===13){event.preventDefault();button.click();}});}
+else console.warn("No button with proper id was found in the form content")}
+else console.warn("There is no step form in the content")}
+function sendMaxWidth(){let main=document.getElementsByClassName("widgetlyMain")[0]
+if(main&&main.classList.contains('widgetlyPreview'))
+parent.postMessage({type:"setFrame",maxWidth:main.getAttribute('data-widgetWidth')+'px'},"*");}
+sendMaxWidth()
+let element;function setBodyOverflow(value){document.getElementsByTagName('body')[0].style.overflow=value}
+function setElement(){let main=document.getElementsByClassName("widgetlyMain")[0]
+let ad=document.getElementsByClassName("widgetlyAd")[0]
+if(main&&main.classList.contains('widgetlyPreview'))element=main
+else if(ad&&ad.classList.contains('widgetlyPreview'))element=ad}
+function sendWidth(){parent.postMessage({type:"setFrame",width:element.offsetWidth},"*");}
+function sendHeight(){parent.postMessage({type:"setFrame",height:element.offsetHeight},"*");setBodyOverflow('auto')
+element.style.visibility='visible'}
+function sendWidthHeight(){element.style.visibility='hidden'
+setBodyOverflow('hidden')
+sendWidth()
+setTimeout(function(){sendHeight(),100})}
+setElement()
+window.onload=function(){if(element)sendWidthHeight()}
+function getFieldElement(fieldId,element){if(fieldId=='this')return element
+else return element.querySelector('#'+fieldId)}
+function getAttribute(attributeInfo){if(attributeInfo.indexOf('==')>-1)return attributeInfo.split('==')[0]
+else return attributeInfo}
+function getCompareValue(attributeInfo){if(attributeInfo.indexOf('==')>-1)return attributeInfo.split('==')[1]
+else return null}
+function getValue(attribute,element){if(attribute=='innerText')return element.innerHTML
+else return element.getAttribute(attribute)}
+function checkFieldValue(element,fieldData){var attribute=getAttribute(fieldData[1])
+var compareValue=getCompareValue(fieldData[1])
+var value=getValue(attribute,element);if(!value||!value.trim())return false
+else if(compareValue&&value!=compareValue)return false
+else return true}
+function checkElementInnerFields(element,innerFieldsData){if(innerFieldsData.length>0){var hiddenFields=0;for(let i=0;i<innerFieldsData.length;i++){let fieldData=innerFieldsData[i].split('.')
+if(fieldData.length==2){var fieldElement=getFieldElement(fieldData[0],element)
+if(fieldElement){if(!checkFieldValue(fieldElement,fieldData)){fieldElement.style.display='none'
+hiddenFields++}}}}
+if(hiddenFields==innerFieldsData.length)element.style.display='none'}}
+function checkInnerFields(){let elements=document.querySelectorAll('[data-on-off-fields]');if(elements.length>0){for(let i=0;i<elements.length;i++){let innerFields=elements[i].getAttribute('data-on-off-fields').split('&')
+checkElementInnerFields(elements[i],innerFields)}}}
+checkInnerFields()
+var validationFields=[];function getErrorMessages(errors){let errorMessages=[];for(let key in errors){let errorMessage=''
+for(let i=0;i<errors[key].length;i++){if(i>0)errorMessage+='<br>'
+errorMessage+=errors[key][i]}
+errorMessages.push({id:key,message:errorMessage})}
+return errorMessages}
+function setValidationFields(){let inputHolders=document.querySelectorAll('.inputHolder')
+if(inputHolders.length>0){for(let i=0;i<inputHolders.length;i++){let inputElement=inputHolders[i].querySelector('input')
+if(inputElement){if(inputElement.hasAttribute('id')){if(inputElement.hasAttribute('data-validation')&&inputElement.getAttribute('data-validation'))
+validationFields.push(getValidationData(inputHolders[i],inputElement.getAttribute('id')))
+else console.warn("The input element is not required")}
+else console.error("The input element doesn't have an id")}
+else console.error("There is no input element in the holder")}}
+else console.warn("There are no input holders")}
+function getValidationData(element,inputElementId){let validationData={}
+element.setAttribute('id',inputElementId+'Holder')
+validationData['inputId']=inputElementId
+validationData['holderId']=element.getAttribute('id')
+let errorMessageElement=element.querySelector('.errorMessage')
+if(errorMessageElement){errorMessageElement.setAttribute('id',inputElementId+'Message')
+validationData['messageId']=errorMessageElement.getAttribute('id')}
+return validationData}
+function setErrorMessages(errors){let errorMessages=getErrorMessages(errors)
+for(let i=0;i<validationFields.length;i++){let errorData=errorMessages.find(errorMessage=>errorMessage['id']==validationFields[i]['inputId'])
+if(errorData)setErrorMessage(validationFields[i],errorData['message'])
+else clearErrorMessage(validationFields[i])}}
+function setErrorMessage(validationField,errorMessage){document.getElementById(validationField['holderId']).classList.add('validationFailed')
+if(validationField['messageId'])
+document.getElementById(validationField['messageId']).innerHTML=errorMessage}
+function clearErrorMessage(validationField){document.getElementById(validationField['holderId']).classList.remove('validationFailed')
+if(validationField['messageId'])
+document.getElementById(validationField['messageId']).innerHTML=''}
+var sendSubscriptionBaseApi='https://api.ampry.com/'
+var submissionData={};var subId=Array(20).fill(0).map(x=>Math.random().toString(36).charAt(2)).join('')
+function closeSubmission(redirect,redirectTag){let closeSubmissionElement=document.getElementById('closeSubmission')
+if(redirect)redirectTag.click()
+closeSubmissionElement.click()}
+function createConfirmationMessage(message){let div=document.createElement('div')
+div.classList.add('confirmationMessage')
+div.innerHTML=message
+return div}
+function createRedirectTag(hrefLink,openNewTab){let a=document.createElement('a')
+a.setAttribute('href',hrefLink)
+if(openNewTab)
+a.setAttribute('target','_blank')
+else a.setAttribute('target','_top')
+return a}
+function handleSubmissionAction(redirectApiUrl){let formElement=document.getElementById('stepForm')
+let submissionHelper=document.getElementsByClassName('submissionHelper')
+let submissionElement=document.getElementById('stepSubmission')
+if(submissionData['action']=='close')
+closeSubmission(false,'')
+else if(submissionData["action"]=="next"){setView(availableViews[activeViewIndex+1]["name"],true);generateForm();setSubmissionData()}
+else if(submissionData['action']=='linkTo'){let redirectTag=createRedirectTag(redirectApiUrl,submissionData['openNewTab'])
+closeSubmission(true,redirectTag)}
+else if(submissionData['action']=='confirmation'){formElement.style.display='none'
+if(submissionHelper.length>0)
+for(let i=0;i<submissionHelper.length;i++){submissionHelper[i].style.display='none';}
+submissionElement.style.display='block'
+let redirectTag=createRedirectTag(redirectApiUrl,false)
+if(submissionData['message'])
+submissionElement.appendChild(createConfirmationMessage(submissionData['message']))
+if(submissionData['closeDelay'])
+setTimeout(function(){closeSubmission(submissionData['redirect'],redirectTag)},submissionData['closeDelay']*1000);else closeSubmission(submissionData['redirect'],redirectTag)}}
+function handleResponse(statusCode,response){if(statusCode==200){setErrorMessages([])
+if(typeof spinnerWrapper!=='undefined'){endSpin()
+setTimeout(function(){handleSubmissionAction(response['redirect']||'')},4300);}
+else handleSubmissionAction(response['redirect']||'')}
+else if(statusCode==400){setErrorMessages(response['lead_fields'])}}
+function checkGridArray(){let gridArray=[]
+gridElementsArray=document.getElementsByClassName('grid-square');if(gridElementsArray.length>0){for(let element of gridElementsArray){if(element.dataset.grid)gridArray.push(element.dataset.grid)}}
+if(gridArray.length<1)return false;else return gridArray}
+function sendSubscription(buttonElement){if(!buttonElement.classList.contains('activeQuery')){buttonElement.classList.add('activeQuery')
+postHttp=new XMLHttpRequest();postHttp.open("POST",sendSubscriptionBaseApi+"lead-manager/subscribe/",true);postHttp.setRequestHeader("Content-Type","application/json");let subscriptionData=getSubscriptionData(buttonElement)
+if(subscriptionData&&subscriptionData["lead_fields"]){let gridArray=[];gridArray=checkGridArray();if(gridArray&&gridArray.length>0){subscriptionData["lead_fields"]["order_array"]={value:gridArray,};}}
+postHttp.send(JSON.stringify(subscriptionData));postHttp.onload=function(){buttonElement.classList.remove('activeQuery')
+handleResponse(postHttp.status,JSON.parse(postHttp.response))}}}
+function getSubscriptionData(buttonElement){let subscriptionData={report_conversion:submissionData['report_conversion'],lead_fields:{}}
+if(subId&&typeof availableViews!=="undefined"&&availableViews.length>0)subscriptionData['subid']=subId;let adId=getAdId(buttonElement)
+let inputIds=getFormInputIds()
+for(let i=0;i<inputIds.length;i++){let inputElement=document.querySelector('input#'+inputIds[i])
+if(inputElement){subscriptionData['lead_fields'][inputIds[i]]={}
+subscriptionData['lead_fields'][inputIds[i]]['value']=inputElement.value
+if(inputElement.hasAttribute('data-validation'))
+subscriptionData['lead_fields'][inputIds[i]]['validation']=inputElement.getAttribute('data-validation')}}
+if(submissionData['redirectUrl'])subscriptionData['redirect']=submissionData['redirectUrl']
+if(adId){subscriptionData['adid']=adId
+subscriptionData['preview']=false}
+else subscriptionData['preview']=true
+if(subscriptionData['report_conversion'])
+subscriptionData['revenue']=submissionData['revenue']||0
+return subscriptionData}
+function getAdId(element){let parentElement=element.parentElement
+if(parentElement.classList.contains('widgetlyAd')){if(parentElement.hasAttribute('data-ad'))
+return parentElement.getAttribute('data-ad')
+else return null}
+else return getAdId(parentElement)}
+function setSubmissionData(){let submissionElement
+if(isMultistepForm()&&typeof(availableViews)!=='undefined'&&availableViews[activeViewIndex]&&availableViews[activeViewIndex]["name"]){submissionElement=document.querySelector(`.${availableViews[activeViewIndex]["name"]}Wrapper`+' #stepSubmission');}else submissionElement=document.getElementById('stepSubmission')
+if(submissionElement&&submissionElement.hasAttribute('data-submission'))
+submissionData=dataHelper.parse(submissionElement.getAttribute('data-submission'))
+else console.error('There is no submission element or there is no submission data')}</script><script>
+        var AmpryIframeID = ''
+        function setIframeHeight()
+        {
+            var element = document.getElementsByClassName("widgetlyMain")[0]
+            var data_sh = element.getAttribute('data-static-height')
+            if (!data_sh) {
+                data_sh = element.offsetHeight + 1 + "px"
+            }
+            post_msg = {'msg':'setIframeHeight','height':data_sh,
+                'iframeID':AmpryIframeID}
+            parent.postMessage(post_msg,'https://www.autocentersnissan.com/')
+        }
+        function setIframeWidth()
+        {
+            var element = document.getElementsByClassName("widgetlyMain")[0]
+            var data_ww = element.getAttribute('data-widgetWidth')
+            if (!data_ww) {
+                data_ww = element.offsetWidth + 1 + "px"
+            }
+            post_msg = {'msg':'setIframeWidth','width':data_ww,
+                'iframeID':AmpryIframeID}
+            parent.postMessage(post_msg,'https://www.autocentersnissan.com/')
+        }
+        function setIframeWidthAndHeight()
+        {
+            var element = document.getElementsByClassName("widgetlyMain")[0]
+            var data_ww = element.getAttribute('data-widgetWidth')
+            var data_sh = element.getAttribute('data-static-height')
+            if (!data_sh) {
+                data_sh = element.offsetHeight + 1 + "px"
+            }
+            post_msg = {'msg':'iframeWidthHeight','height':data_sh,
+                'width':element.offsetWidth,'iframeID':AmpryIframeID,
+                'widgetWidth':data_ww}
+            parent.postMessage(post_msg,'https://www.autocentersnissan.com/')
+        }
+        function routeMessage (evt) {
+            //if ('https://www.autocentersnissan.com/'.includes(evt.origin))
+            //{
+                if (evt.data['iframeID'])
+                {
+                    AmpryIframeID = evt.data['iframeID']
+                }
+                if (evt.data['msg'] == "iframeWidthHeight")
+                {
+                    sendIframeWidthHeight(evt);
+                }
+                else if (evt.data['msg'] == "iframeWidthHeightWH")
+                {
+                    sendIframeWidthHeightWH(evt);
+                }
+                if (evt.data['msg'] == 'widgetlyClose')
+                {
+                    widgetlyClosable(evt);
+                }
+                if (evt.data['msg'] == 'pushPageTB')
+                {
+                    pushPageTB(evt);
+                }
+                if (evt.data['msg'] == 'sendIframeID')
+                {
+                    window.addEventListener("resize", function () {
+                        var element = document.getElementsByClassName("widgetlyMain")[0]
+                        var data_sh = element.getAttribute('data-static-height')
+                        if (!data_sh) {
+                            data_sh = element.offsetHeight + 1 + "px"
+                        }
+                        parent.postMessage({'msg':'iframeWidthHeightWH','height':data_sh,'iframeID':evt.data['iframeID']},'https://www.autocentersnissan.com/')
+                        if (evt.data['marginResize'])
+                        {
+                            parent.postMessage({'msg':'pushPageTB','iframeID':evt.data['iframeID'],'height':element.offsetHeight},'https://www.autocentersnissan.com/')                            
+                        }
+                    });
+                }
+                if (evt.data['msg'] == 'sendIframeIDBoth')
+                {
+                    window.addEventListener("resize", function () {
+                        var element = document.getElementsByClassName("widgetlyMain")[0]
+                        var data_ww = element.getAttribute('data-widgetWidth')
+                        var data_sh = element.getAttribute('data-static-height')
+                        if (!data_sh) {
+                            data_sh = element.offsetHeight + 1 + "px"
+                        }
+                        post_msg = {'msg':'iframeWidthHeight','height':data_sh,
+                            'width':element.offsetWidth,'iframeID':evt.data['iframeID'],
+                            'widgetWidth':data_ww}
+                        parent.postMessage(post_msg,'https://www.autocentersnissan.com/')
+                    });
+                }
+            //}
+        }
+
+        function pushPageTB(evt)
+        {
+            var element = document.getElementsByClassName("widgetlyMain")[0]
+            parent.postMessage({'msg':'pushPageTB','iframeID':evt.data['iframeID'],'height':element.offsetHeight},'https://www.autocentersnissan.com/')
+        }
+        function sendIframeWidthHeight(evt)
+        {
+            var element = document.getElementsByClassName("widgetlyMain")[0]
+            var data_sh = element.getAttribute('data-static-height')
+            if (!data_sh) {
+                data_sh = element.offsetHeight + 1 + "px"
+            }
+            parent.postMessage({
+                'iframeID':evt.data['iframeID'],
+                'msg':'iframeWidthHeight',
+                'width':element.offsetWidth,
+                'height':data_sh,
+                'hideAfterLoad':evt.data.hideAfterLoad
+                },'https://www.autocentersnissan.com/')
+        }
+
+        function sendIframeWidthHeightWH(evt)
+        {
+            var element = document.getElementsByClassName("widgetlyMain")[0]
+            var data_sh = element.getAttribute('data-static-height')
+            if (!data_sh) {
+                data_sh = element.offsetHeight + 1 + "px"
+            }
+            parent.postMessage({'msg':'iframeWidthHeightWH','iframeID':evt.data['iframeID'],'width':element.offsetWidth,'height':data_sh},'https://www.autocentersnissan.com/')
+        }
+
+        function widgetlyClosable(evt)
+        {
+            closable = evt.data['closable'];
+            clsIcos = document.getElementsByClassName('widgetlyClose');
+            if (closable==true || closable==null){
+                for (var i = 0; i < clsIcos.length; i++) {
+                    clsIcos[i].onclick = function(){
+                        parent.postMessage({'msg':'iframeDisplayNone','iframeID':evt.data['iframeID'], 'widgetTypeId':evt.data['widgetTypeId']},'https://www.autocentersnissan.com/')
+                    }
+                }
+            }
+            else if (closable==false){
+                for (var i = 0, l = clsIcos.length; i < l; i++) {
+                    clsIcos[i].style.display = "none";
+                }
+            }
+            clsTriggers = document.getElementsByClassName('trigger-close');
+            for (var i = 0; i < clsTriggers.length; i++) {
+                clsTriggers[i].addEventListener("click", function(){
+                    parent.postMessage({'msg':'iframeDisplayNone','iframeID':evt.data['iframeID'], 'widgetTypeId':evt.data['widgetTypeId']},'https://www.autocentersnissan.com/')
+                })
+            }
+        }
+
+        if (window.addEventListener) {
+            // For standards-compliant web browsers
+            window.addEventListener("message", routeMessage, false);
+        }
+        else {
+            window.attachEvent("onmessage", routeMessage);
+        }
+        
+
+        </script></body></html>

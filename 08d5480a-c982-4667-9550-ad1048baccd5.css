@@ -1,0 +1,42 @@
+[data-edit-holder]{
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+[data-edit-holder]::before{
+    content:'';
+    position: absolute;
+    z-index: 100;
+    border:2px dashed #6226b7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    display: none;
+}
+[data-edit-holder]::after{
+    content:attr(data-edit-section);
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    position: absolute;
+    z-index: 100;
+    background-color: #6226b7;
+    color: #fff;
+    padding: 0.2em;
+    font-size: min(0.8em,16px);
+    top: 0px;
+    left: 0px;
+    display: none;
+    max-width: calc(100% - 4px);
+    max-height: calc(100% - 4px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+[data-edit-holder]:hover::before,
+[data-edit-holder]:hover::after{
+    display: block;
+}

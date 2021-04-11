@@ -1,0 +1,49 @@
+.widgetlyMain.widgetlyBottomLeft {
+    bottom: 0px;
+    left: 0px
+}
+
+.widgetlyMain.widgetlyBottomCenter {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.widgetlyMain.widgetlyBottomRight {
+    bottom: 0px;
+    right: 0px
+}
+
+.widgetlyMain.widgetlyTopLeft {
+    top: 0px;
+    left: 0px
+}
+
+.widgetlyMain.widgetlyTopCenter {
+    top: 0px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+}
+
+.widgetlyMain.widgetlyTopRight {
+    top: 0px;
+    right: 0px
+}
+
+.widgetlyMain.widgetlyMobileTop {
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: auto;
+    margin: auto;
+}
+
+.widgetlyMain.widgetlyMobileBottom {
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    top: auto;
+    margin: auto;
+}
